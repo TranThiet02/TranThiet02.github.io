@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Restaurant</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-mode" id="top">
+    <header>
+        <h1>Nhà hàng ABC</h1>
+    </header>
+
+    <section id="location">
+        <h2>Hải Châu, TP. Đà Nẵng</h2>
+        <a href="contact.html" id="contact-link">Liên hệ</a>
+    </section>
+
+    <section id="gallery">
+        <h2>Thư viện ảnh</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="test1.jpg" alt="Hình ảnh món ăn 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test2.png" alt="Hình ảnh món ăn 2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test3.png" alt="Hình ảnh món ăn 3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test4.jpg" alt="Hình ảnh món ăn 4" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test5.jpg" alt="Hình ảnh món ăn 5" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test6.jpg" alt="Hình ảnh món ăn 6" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test7.jpg" alt="Hình ảnh món ăn 7" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="test8.jpg" alt="Hình ảnh món ăn 8" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <button id="theme-toggle">Chuyển chế độ</button>
+    <a href="#top" id="scroll-to-top">Lên đầu trang</a>
+
+    <footer>
+        <p>&copy; 2024 ABC Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
